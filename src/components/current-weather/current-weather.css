@@ -1,11 +1,16 @@
+.currweather {
+  display: flex;
+  justify-content: center;
+}
+
 .weather {
-  width: 300px;
+  max-width: 300px;
   border-radius: 6px;
   box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 40%);
   color: #fff;
   background-color: #333;
-  margin: 30px auto 0 auto;
-  padding: 0 20px 20px 20px;
+  margin: 30px 5px 0 5px;
+  padding: 0 10px 20px 10px;
 }
 
 .top,
@@ -35,7 +40,7 @@
 
 .temperature {
   font-weight: 600;
-  font-size: 70px;
+  font-size: 50px;
   width: auto;
   letter-spacing: -1px;
   margin: 10px 0;

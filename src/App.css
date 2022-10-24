@@ -7,5 +7,9 @@
 .container {
   max-width: 1080px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0;
+}
+
+.searchBar {
+  margin: 0 10px;
 }

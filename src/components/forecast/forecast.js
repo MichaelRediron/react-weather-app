@@ -33,20 +33,22 @@ const Forecast = ({ data }) => {
           <AccordionItem key={index}>
             <AccordionItemHeading>
               <AccordionItemButton>
-                <div className='daily-item'>
-                  <img
-                    className='icon-small'
-                    alt='weather'
-                    src={`icons/${item.weather[0].icon}.png`}
-                  />
-                  <label className='day'>{forecastDays[index]}</label>
-                  <label className='description'>
-                    {item.weather[0].description}
-                  </label>
-                  <label className='min-max'>
-                    Low: {Math.round(item.main.temp_min)}°C / High:{' '}
-                    {Math.round(item.main.temp_max)}°C
-                  </label>
+                <div className='dailywrap'>
+                  <div className='daily-item'>
+                    <img
+                      className='icon-small'
+                      alt='weather'
+                      src={`icons/${item.weather[0].icon}.png`}
+                    />
+                    <label className='day'>{forecastDays[index]}</label>
+                    <label className='description'>
+                      {item.weather[0].description}
+                    </label>
+                    <label className='min-max'>
+                      Low: {Math.round(item.main.temp_min)}°C / High:{' '}
+                      {Math.round(item.main.temp_max)}°C
+                    </label>
+                  </div>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
